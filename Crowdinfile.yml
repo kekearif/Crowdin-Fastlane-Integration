@@ -1,0 +1,31 @@
+## This should NOT be commit to git ###
+project_id: XXXXXXXXX
+api_key: XXXXXXXXXXXX
+
+# Lang mappings unique to our Crowdin config
+# This is an example only
+langs:
+  en-HK/Localizable.strings:
+    - Base.lproj
+    - en-HK.lproj
+    - en-AU.lproj
+    - en-NZ.lproj
+    - en-SG.lproj
+  id/Localizable.strings:
+    - id-ID.lproj
+  ja/Localizable.strings:
+    - ja.lproj
+  ko/Localizable.strings:
+    - ko.lproj
+  ms/Localizable.strings:
+    - ms.lproj
+  th/Localizable.strings:
+    - th.lproj
+  zh-CN/Localizable.strings:
+    - zh-Hans.lproj
+  zh-HK/Localizable.strings:
+    - zh-Hant-HK.lproj
+  zh-TW/Localizable.strings:
+    - zh-Hant-TW.lproj
+  zhh/Localizable.strings:
+    - zh-Hant.lproj
