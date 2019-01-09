@@ -1,4 +1,4 @@
-Simply add this lane to the `Fastfile` and configure the add the `Crowdinfile.yml` to the `fastlane` dir in your project.
+Simply add this lane to the `Fastfile`, make sure `ProjectName` is replaced with the project name and then configure and add the `Crowdinfile.yml` to the `fastlane` dir in your project.
 
 ```ruby
 
@@ -10,7 +10,7 @@ Simply add this lane to the `Fastfile` and configure the add the `Crowdinfile.ym
     config = YAML.load(File.read("Crowdinfile.yml"))
     build = "https://api.crowdin.com/api/project/#{config["project_id"]}/export?key=#{config["api_key"]}"
     dl = "https://api.crowdin.com/api/project/#{config["project_id"]}/download/all.zip?key=#{config["api_key"]}"
-    path = File.expand_path('..') + "/Snapask/Strings/"
+    path = File.expand_path('..') + "/ProjectName/Strings/"
     langs = config["langs"]
     # Expected size of the array, used to check if new languages have been added or not
     # The size logic can be omitted if needed
